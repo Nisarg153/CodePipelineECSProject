@@ -30,4 +30,5 @@ phases:
       # NOTE: AWS CodeBuild can't directly trigger a Jenkins job. Use CodePipeline or EventBridge + Lambda if needed.
 artifacts:
   files:
-    - target/*.jar
+    - appspec.yaml
+    - taskdef.json

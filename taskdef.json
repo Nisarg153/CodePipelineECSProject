@@ -1,0 +1,22 @@
+{
+    "family": "my-java-app-task",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::029197504624:role/ecsTaskExecutionRole",
+    "requiresCompatibilities": ["FARGATE"],
+    "cpu": "256",
+    "memory": "512",
+    "containerDefinitions": [
+      {
+        "name": "my-java-app",
+        "image": "029197504624.dkr.ecr.us-east-1.amazonaws.com/my-java-app:latest",
+        "essential": true,
+        "portMappings": [
+          {
+            "containerPort": 9090,
+            "protocol": "tcp"
+          }
+        ]
+      }
+    ]
+  }
+  
