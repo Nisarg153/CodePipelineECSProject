@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: my-java-app-task
+        TaskDefinition: arn:aws:ecs:us-east-1:029197504624:task-definition/my-java-app-task:10
         LoadBalancerInfo:
           ContainerName: "my-java-app"
           ContainerPort: 9090
